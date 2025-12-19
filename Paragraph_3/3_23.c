@@ -6,7 +6,7 @@
         int largest = 0;
 
             while(counter != 11){
-                printf("%s%d%s", "Enter the ", counter, "number to get the biggest: ");
+                printf("%s%d%s", "Enter the ", counter, " number to get the biggest: ");
                 scanf("%d", &number);
                 if(number > largest){
                     largest = number;
@@ -15,4 +15,5 @@
             }
         printf("%s%d", "The largest number is: " , largest);
     }
+
 
