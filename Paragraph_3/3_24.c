@@ -4,6 +4,7 @@
         int number = 1;
         int constant = 1;
         int count = 0;
+        int count3 = 1;
 
 
 
@@ -14,9 +15,19 @@
         }
         printf("\n\n");
 
+        while(count3 <= 10){
+            while(count < 4){
+                printf("%d\t", number);
+                number *=10;
+                count++;
+            }
+            printf("\n");
+            count3++;
+            number = count3;
+            count = 0;
+        }
 
-
-            while(number != 10000){
+            /*while(number != 10000){
                 printf("%d\t", number);
                 number *= 10;
                 count++;
@@ -59,5 +70,5 @@
                         number = 10;
                     }
             }
-    printf("%d\n", number);
+    printf("%d\n", number);*/
     }
