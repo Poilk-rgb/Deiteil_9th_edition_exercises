@@ -4,10 +4,11 @@ int main(void){
    double e = 1;
    double factorial = 1;
    int number = 1;
-   int store1 = 2;
+   int store1 = 0;
    int store2 = 0;
    int store3 = 0;
    int x = 2;
+   store1 = x;
    
         while(number != 20){
             
@@ -32,6 +33,7 @@ int main(void){
             number = store2 + 1;//2 3 4 5 6
         }
     
-        e -= 2;
+        e -= store1;
         printf("%.10lf", e);
 }
+
