@@ -20,7 +20,7 @@ int amount_of_digits(int number){
 int digits_reversed(int number){
     int reversed_number = 0;
     int store = amount_of_digits(number);
-    for(;store > 0;){
+    while(store > 0){
         reversed_number += (number % 10) * pow(10, --store);
         number /= 10;
     }
